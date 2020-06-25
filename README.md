@@ -1,4 +1,4 @@
-# TIA - Your Advanced Twitter stalking tool
+# TIA v0.1 - Your Advanced Twitter stalking tool
 ![GitHub license](https://img.shields.io/badge/python-v3.7-blue)
 ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 
@@ -24,4 +24,4 @@ As of v0.1, TIA
 - Creates date-wise/hourly plots for the user's **subjectivity** (EN)
 
 # Demo video
-[![](http://img.youtube.com/vi/JJrJQefM71c/0.jpg)](http://www.youtube.com/watch?v=JJrJQefM71c "TIA v0.1 Demo")
+![TIA v0.1 Demo](https://i.imgur.com/4g8K1Sa.gif)
