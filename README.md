@@ -1,4 +1,4 @@
-# TIA - Your AI-Powered Twitter intelligence tool
+# TIA - Your Advanced Twitter stalking tool
 ![GitHub license](https://img.shields.io/badge/python-v3.7-blue)
 ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 
