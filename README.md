@@ -25,3 +25,11 @@ As of v0.1, TIA
 
 # Demo video
 ![TIA v0.1 Demo](https://i.imgur.com/4g8K1Sa.gif)
+
+# How can I install?
+For v0.1:
+- Git clone
+- Download the needed packages used in the project, PyCharm will help you on that
+- Change the URL_ROOT variable in tia/stalk/init.py
+- Scrape the user with scrape_user.py script
+- Run run.py
