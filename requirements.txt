@@ -1,0 +1,12 @@
+wordcloud==1.7.0
+matplotlib==3.2.1
+numpy==1.18.5
+Flask==1.1.2
+flask_wtf==0.14.3
+googletrans==3.0.0
+nltk==3.5
+pandas==1.0.4
+scikit-learn==0.21.2
+textblob==0.15.3
+twint==2.1.20
+WTForms==2.3.1
