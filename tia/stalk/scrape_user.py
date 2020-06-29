@@ -3,6 +3,7 @@ from tia.stalk.user import User
 import twint as tw
 import os
 import shutil
+import time
 
 # Currently scrape_user.py is not used in the app, you can use this as a supplementary script to get the necessary
 # files to stalk your target.
@@ -95,3 +96,21 @@ def scrape_user(user):
     time.sleep(60)
     get_user_mentioned_csv(user)
     time.sleep(60)
+
+
+# How to use the script?
+# Create a user instance with the username, like uka = User("umitkaanusta")
+# Then scrape_user(uka)
+#
+# Sometimes problems occur due to the Twint library.
+# In that case, execute the functions in scrape_user step by step.
+#
+# Successful case:
+# umitkaanusta_scraped /
+#   following.txt
+#   followers.txt
+#   tweets.csv
+#   mentioned.csv
+
+ufuk = User("_ufuksahin")
+get_followers_txt(ufuk)
