@@ -55,18 +55,31 @@ def get_polarity_score_tr(user):
     # Gets polarity score for TR tweets
     # -100 is the negative end, 100 is the positive end
     tr = Translator()
+    score = 0
     tweets = get_tweets(user)
     tweets_text = tweets_to_string(tweets)
-    tr_text = tr.translate(tweets_text).text
-    return int(TextBlob(tr_text).sentiment.polarity * 100)
+    text_list = []
+    for i in range(0, len(tweets_text), 15000):
+        text_list.append(tweets_text[i: i + 15000])
+    translations = tr.translate(text_list)
+    for translation in translations:
+        score += int(TextBlob(translation.text).sentiment.polarity * 100)
+    score = int(score / len(text_list))
+    return score
 
 
 def get_subjectivity_score_tr(user):
-    # Gets polarity score for TR tweets
+    # Gets subjectivity score for TR tweets
     # -100 is the negative end, 100 is the positive end
     tr = Translator()
+    score = 0
     tweets = get_tweets(user)
     tweets_text = tweets_to_string(tweets)
-    tr_text = tr.translate(tweets_text).text
-    return int(TextBlob(tr_text).sentiment.subjectivity * 100)
-
+    text_list = []
+    for i in range(0, len(tweets_text), 15000):
+        text_list.append(tweets_text[i: i + 15000])
+    translations = tr.translate(text_list)
+    for translation in translations:
+        score += int(TextBlob(translation.text).sentiment.subjectivity * 100)
+    score = int(score / len(text_list))
+    return score
