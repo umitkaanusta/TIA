@@ -11,6 +11,7 @@ from sklearn.linear_model import LogisticRegression
 import string
 from nltk.stem import PorterStemmer
 from nltk import word_tokenize
+import nltk
 from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import TfidfVectorizer
 from tia.stalk.util import stemming_tokenizer
@@ -22,6 +23,8 @@ df.dropna(inplace=True)
 X = df["text"]
 y = df["Gender"]
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20)
+
+nltk.download("punkt")
 
 gender_model_tr = Pipeline([('vectorizer', TfidfVectorizer(tokenizer=stemming_tokenizer)),
                              ('classifier', LogisticRegression())])
