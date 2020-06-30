@@ -2,6 +2,8 @@
 from textblob import TextBlob
 import time
 import numpy as np
+from nltk.stem import PorterStemmer
+from nltk import word_tokenize
 
 
 def tweets_to_string(df):
@@ -37,3 +39,9 @@ def get_subjectivity_en(text):
 
 def get_hours(tweet_time):
     return int(tweet_time[0:2])
+
+
+def stemming_tokenizer(text):
+    # This is here for nlp models (will be relocated)
+    stemmer = PorterStemmer()
+    return [stemmer.stem(w) for w in word_tokenize(text)]
