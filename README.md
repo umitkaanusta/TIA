@@ -8,7 +8,7 @@ TIA uses machine learning models to create an advanced stalking report. If the u
 a public Twitter account, the rest is easy for TIA. (Twint package is used in the data
 gathering process.)
 
-**TIA will be deployed after some improvements.**
+**Live demo (try to zoom out in mobile):** http://umitkaanusta.pythonanywhere.com/ 
 
 **Contact me at u.kaanusta@gmail.com for any personal/business inquiries or if you want to contribute.** 
 
