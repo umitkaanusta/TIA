@@ -111,6 +111,3 @@ def scrape_user(user):
 #   followers.txt
 #   tweets.csv
 #   mentioned.csv
-
-ufuk = User("_ufuksahin")
-get_followers_txt(ufuk)
