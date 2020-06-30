@@ -12,6 +12,7 @@ from sklearn.linear_model import LogisticRegression
 import string
 from nltk.stem import PorterStemmer
 from nltk import word_tokenize
+import nltk
 from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import TfidfVectorizer
 from tia.stalk.util import stemming_tokenizer
@@ -26,6 +27,8 @@ df.reset_index(inplace=True)
 
 X = df[["text"]]
 y = df[["gender"]]
+
+nltk.download("punkt")
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20)
 
