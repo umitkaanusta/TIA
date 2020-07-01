@@ -15,7 +15,7 @@
     <div class="text-center content-section">
         <form method="post" action="">
             {{ form.hidden_tag() }}
-            <div class="form-group" style="width: 500px; margin-left:520px">
+            <div class="form-group" style="margin:0 auto; width:30%">
                 {{ form.username.label(class="form-control-label w-50") }}
                 {% if form.username.errors %}
                     {{ form.username(class="form-control form-control-lg is-invalid") }}
@@ -40,6 +40,11 @@
         <br>
         <h5>Created by Ümit Kaan Usta with ❤</h5>
         <a href="http://github.com/umitkaanusta/TIA" class="btn btn-outline-dark" role="button">Give it a star on GitHub!</a>
+    </div>
+    <div class="text-center">
+        <br>
+        <h5>Fill the form below to be notified about upcoming updates and releases</h5>
+        <a href="https://forms.gle/f2bT7nXubFmsUYaE9" class="btn btn-outline-primary" role="button">Go to the form</a>
     </div>
 
     <!-- Optional JS -->
