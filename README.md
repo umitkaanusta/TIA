@@ -33,3 +33,7 @@ For v0.1:
 - Change the URL_ROOT variable in tia/stalk/init.py
 - Scrape the user with scrape_user.py script
 - Run run.py
+
+## Issues/Warnings
+- The script scrape_user.py gives an ImportError in Linux since TIA is written in Windows.
+  - Contributions are welcome to solve the issue!
