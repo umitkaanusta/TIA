@@ -1,6 +1,6 @@
-# TIA v0.1 - Your Advanced Twitter stalking tool
+# TIA - Your Advanced Twitter stalking tool
 ![GitHub license](https://img.shields.io/badge/python-v3.7-blue)
-![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
+![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)
 
 ![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)
 
@@ -11,7 +11,6 @@ gathering process.)
 **Contact me at u.kaanusta@gmail.com for any personal/business inquiries or if you want to contribute.** 
 
 # What does TIA do?
-As of v0.1, TIA
 - Predicts the gender of a user based on their tweets (TR/EN)
 - Shows the positivity/negativity in user's tweets with a score (TR/EN)
 - Shows the subjectivity in user's tweets with a score (TR/EN)
@@ -25,7 +24,6 @@ As of v0.1, TIA
 ![TIA v0.1 Demo](https://i.imgur.com/4g8K1Sa.gif)
 
 # How can I install?
-For v0.1:
 - Git clone
 - Download the needed packages used in the project, PyCharm will help you on that
 - Change the URL_ROOT variable in tia/stalk/init.py
