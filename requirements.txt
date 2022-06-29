@@ -1,6 +1,6 @@
 wordcloud==1.7.0
 matplotlib==3.2.1
-numpy==1.18.5
+numpy==1.22.0
 Flask==1.1.2
 flask_wtf==0.14.3
 googletrans==3.0.0
